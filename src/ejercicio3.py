@@ -8,5 +8,6 @@ personas = [
     (45.1, 1.65)
 ]
 
-for p in personas:
-    print(f"El IMC de la persona {personas.index(p)} es {calcula_imc(p[0], p[1])} y su estado nutricional es {calcula_estado_nutricional(p[0], p[1])}.")
+if __name__ == "__main__":
+    for p in personas:
+        print(f"El IMC de la persona {personas.index(p) + 1} es {calcula_imc(p[0], p[1])} y su estado nutricional es {calcula_estado_nutricional(p[0], p[1])}.")
